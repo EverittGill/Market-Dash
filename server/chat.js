@@ -9,7 +9,7 @@ const fetch = require('cross-fetch');
 const client = new ApolloClient({
   link: new HttpLink({
     uri: process.env.NODE_ENV === 'production' ? 
-      'https://our-domain.com/graphql' : // replace with our actual domain
+      'https://market-dash-d97ba637857f.herokuapp.com/graphql' : // replace with our actual domain
       'http://localhost:3001/graphql', fetch
   }),
   cache: new InMemoryCache(),
